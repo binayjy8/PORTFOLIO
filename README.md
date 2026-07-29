@@ -18,7 +18,6 @@ A personal portfolio site showcasing full-stack projects, skills, and contact in
 .
 ├── index.html
 ├── style.css
-├── favicon.svg
 ├── resume.pdf
 └── images/
     ├── ai-app.png
