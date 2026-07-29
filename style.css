@@ -304,3 +304,21 @@ footer {
     padding: 22px;
   }
 }
+ 
+.projectTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+@media (max-width: 480px) {
+  .projectTitle {
+    font-size: 0.95em;
+  }
+}
+
+
+.heroActions .btn.secondary + .btn.secondary {
+  opacity: 0.9;
+}
