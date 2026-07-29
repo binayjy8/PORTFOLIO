@@ -20,7 +20,6 @@ A personal portfolio site showcasing full-stack projects, skills, and contact in
 ├── style.css
 ├── resume.pdf
 └── images/
-    ├── ai-app.png
     ├── KaviosPx.png
     ├── workasana.png
     ├── anvaya.png
@@ -31,7 +30,6 @@ A personal portfolio site showcasing full-stack projects, skills, and contact in
 
 | Project | Demo | Code |
 |---|---|---|
-| AI App | _add link_ | _add link_ |
 | KaviosPix | https://kaviospix-frontend-vert.vercel.app/ | https://github.com/binayjy8/KaviosPix |
 | Workasana App | https://workasana-front-ui.vercel.app/ | https://github.com/binayjy8/workasana-app |
 | Anvaya CRM | https://anvaya-f.vercel.app/ | https://github.com/binayjy8/anvaya-crm |
