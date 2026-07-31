@@ -43,6 +43,7 @@ a {
   font-size: 1.05rem;
   font-weight: 800;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .navLinks {
@@ -80,6 +81,7 @@ main {
   margin: auto;
 }
 
+/* Eyebrow ("Full Stack Developer") is the heaviest weight in the hero */
 .eyebrow {
   color: #38bdf8;
   font-weight: 800;
@@ -89,19 +91,23 @@ main {
   margin-bottom: 12px;
 }
 
+/* Name — deliberately lighter than the eyebrow above it */
 .hero h1 {
   max-width: 850px;
   font-size: clamp(2.5rem, 6vw, 4.8rem);
   line-height: 1.05;
   margin-bottom: 22px;
   color: #ffffff;
+  font-weight: 600;
 }
 
+/* Intro paragraph — lightest of the three */
 .heroText {
   max-width: 680px;
   color: #cbd5e1;
   font-size: 1.1rem;
   margin-bottom: 32px;
+  font-weight: 400;
 }
 
 .heroActions {
@@ -155,6 +161,49 @@ main {
   color: #94a3b8;
 }
 
+/* ---------- About section ---------- */
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.aboutText p {
+  color: #cbd5e1;
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+}
+
+.aboutStats {
+  display: grid;
+  gap: 14px;
+}
+
+.statCard {
+  background: #05070d;
+  border: 1px solid #1f2937;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statNumber {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #38bdf8;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* ---------- Projects ---------- */
+
 .projects {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -167,6 +216,8 @@ main {
   border-radius: 8px;
   overflow: hidden;
   transition: 0.25s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .projectCard:hover {
@@ -187,6 +238,9 @@ main {
 
 .projectContent {
   padding: 26px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .projectContent h3 {
@@ -196,10 +250,12 @@ main {
   margin-bottom: 12px;
 }
 
+/* Fixed height keeps varying description lengths visually aligned across cards */
 .projectContent p {
   color: #cbd5e1;
   font-size: 1rem;
   margin-bottom: 22px;
+  min-height: 4.8em;
 }
 
 .tags {
@@ -224,6 +280,7 @@ main {
   display: flex;
   gap: 28px;
   align-items: center;
+  margin-top: auto;
 }
 
 .projectLinks a {
@@ -236,11 +293,30 @@ main {
   color: #38bdf8;
 }
 
+/* ---------- Tech stack ---------- */
+
+.techGroups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.techGroupTitle {
+  color: #38bdf8;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
 .techStack {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
 }
+
+/* ---------- Contact ---------- */
 
 .contactSection {
   text-align: center;
@@ -273,6 +349,14 @@ footer {
   .projects {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .aboutGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .techGroups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 700px) {
@@ -303,21 +387,23 @@ footer {
   .projectContent {
     padding: 22px;
   }
+
+  .techGroups {
+    grid-template-columns: 1fr;
+  }
 }
- 
+
 .projectTitle {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-
 @media (max-width: 480px) {
   .projectTitle {
     font-size: 0.95em;
   }
 }
-
 
 .heroActions .btn.secondary + .btn.secondary {
   opacity: 0.9;

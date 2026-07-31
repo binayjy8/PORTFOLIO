@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Binay Bhusan Mohanta | Full Stack Developer</title>
 
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,9 +19,10 @@
 <body>
   <header class="header">
     <nav class="navbar">
-      <a href="images/favicon.svg" class="logo">Binay Bhusan Mohanta</a>
+      <a href="#about" class="logo">Binay Bhusan Mohanta</a>
 
       <div class="navLinks">
+        <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
@@ -42,7 +43,45 @@
         <div class="heroActions">
           <a href="#contact" class="btn primary">Contact Me</a>
           <a href="#projects" class="btn secondary">View Projects</a>
-          <a href="/resume.pdf" class="btn secondary" target="_blank" rel="noopener">View Resume</a>
+          <a href="https://docs.google.com/document/d/1JJaWMZ-ZfX8dW3ACNO1GtR6OGaQUkmJcuJ79rUtjJ9E/edit?usp=sharing" class="btn secondary" target="_blank" rel="noopener">View Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section aboutSection">
+      <div class="sectionHeader">
+        <p class="eyebrow">About Me</p>
+        <h2>Who I Am</h2>
+      </div>
+
+      <div class="aboutGrid">
+        <div class="aboutText">
+          <p>
+            I'm a full stack developer who enjoys turning rough ideas into
+            working products — from database schema to the last pixel of UI.
+            My focus is the MERN stack, with an emphasis on clean, maintainable
+            code and interfaces people actually enjoy using.
+          </p>
+          <p>
+            Outside of building apps, I like digging into how things work under
+            the hood — reading source code, breaking things on purpose, and
+            figuring out why.
+          </p>
+        </div>
+
+        <div class="aboutStats">
+          <div class="statCard">
+            <span class="statNumber">4+</span>
+            <span class="statLabel">Projects Shipped</span>
+          </div>
+          <div class="statCard">
+            <span class="statNumber">MERN</span>
+            <span class="statLabel">Primary Stack</span>
+          </div>
+          <div class="statCard">
+            <span class="statNumber">JWT / OAuth</span>
+            <span class="statLabel">Auth Systems Built</span>
+          </div>
         </div>
       </div>
     </section>
@@ -62,9 +101,9 @@
           <div class="projectContent">
             <h3 class="projectTitle">KaviosPix</h3>
             <p>
-              A Google Photos–style image management app. Users sign in with Google or
-              email, create albums, share them with specific people, and tag, favorite,
-              and comment on uploaded photos.
+              A Google Photos–style image manager with Google and email
+              authentication. Users create albums, share them with specific
+              people, and tag, favorite, and comment on photos.
             </p>
 
             <div class="tags">
@@ -77,56 +116,57 @@
 
             <div class="projectLinks">
               <a href="https://kaviospix-frontend-vert.vercel.app/" target="_blank">Demo</a>
-              <a href="https://github.com/binayjy8/KaviosPix.git" target="_blank">Code</a>
+              <a href="https://github.com/binayjy8/KaviosPix" target="_blank">Code</a>
             </div>
           </div>
         </article>
 
         <article class="projectCard">
-          <img src="images/workasana.png" alt="Workasana App project preview" />
+          <img src="images/workasana.png" alt="TaskFlow project preview" />
 
           <div class="projectContent">
-            <h3 class="projectTitle">Workasana App</h3>
+            <h3 class="projectTitle">TaskFlow</h3>
             <p>
-              A full-stack MERN project management application.
+              A full-stack MERN project management tool. Teams create
+              projects, assign tasks with owners and deadlines, and track
+              progress on a shared dashboard.
             </p>
 
             <div class="tags">
               <span>React</span>
               <span>Node.js</span>
               <span>Express</span>
-              <!-- confirm auth is implemented here before keeping this tag -->
               <span>JWT</span>
             </div>
 
             <div class="projectLinks">
               <a href="https://workasana-front-ui.vercel.app/" target="_blank">Demo</a>
-              <a href="https://github.com/binayjy8/workasana-app.git" target="_blank">Code</a>
+              <a href="https://github.com/binayjy8/WORKASANA.git" target="_blank">Code</a>
             </div>
           </div>
         </article>
 
         <article class="projectCard">
-          <img src="images/anvaya.png.png" alt="Anvaya CRM project preview" />
+          <img src="images/anvaya.png.png" alt="ClientHub project preview" />
 
           <div class="projectContent">
-            <h3 class="projectTitle">Anvaya CRM</h3>
+            <h3 class="projectTitle">ClientHub</h3>
             <p>
-              A CRM web application for managing customer relationships,
-              tracking leads, and improving business workflow.
+              A CRM for tracking leads and customer relationships. Sales reps
+              log interactions, move leads through pipeline stages, and view
+              team performance at a glance.
             </p>
 
             <div class="tags">
               <span>React</span>
               <span>Node.js</span>
               <span>MongoDB</span>
-              <!-- confirm auth is implemented here before keeping this tag -->
               <span>JWT</span>
             </div>
 
             <div class="projectLinks">
               <a href="https://anvaya-f.vercel.app/" target="_blank">Demo</a>
-              <a href="https://github.com/binayjy8/anvaya-crm.git" target="_blank">Code</a>
+              <a href="https://github.com/binayjy8/ANVAYA-F.git" target="_blank">Code</a>
             </div>
           </div>
         </article>
@@ -137,21 +177,21 @@
           <div class="projectContent">
             <h3 class="projectTitle">E-Commerce Platform</h3>
             <p>
-              A shopping platform with product listings, cart functionality,
-              and a smooth checkout experience.
+              A shopping platform with product listings and category
+              browsing. Users add items to a cart and complete a multi-step
+              checkout with an order summary.
             </p>
 
             <div class="tags">
               <span>React</span>
               <span>Express</span>
               <span>MongoDB</span>
-              <!-- confirm auth is implemented here before keeping this tag -->
               <span>JWT</span>
             </div>
 
             <div class="projectLinks">
               <a href="https://major-project-1-dun.vercel.app/" target="_blank">Demo</a>
-              <a href="https://github.com/binayjy8/ecommerce-platform.git" target="_blank">Code</a>
+              <a href="https://github.com/binayjy8/ShopEasy-eCommerce.git" target="_blank">Code</a>
             </div>
           </div>
         </article>
@@ -165,18 +205,43 @@
         <p>Technologies I use to build modern web applications.</p>
       </div>
 
-      <ul class="techStack">
-        <li>React</li>
-        <li>Node.js</li>
-        <li>MongoDB</li>
-        <li>Express.js</li>
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JWT</li>
-        <li>OAuth</li>
-        <li>GitHub</li>
-      </ul>
+      <div class="techGroups">
+        <div class="techGroup">
+          <h3 class="techGroupTitle">Frontend</h3>
+          <ul class="techStack">
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Redux</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+
+        <div class="techGroup">
+          <h3 class="techGroupTitle">Backend</h3>
+          <ul class="techStack">
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MongoDB</li>
+            <li>Mongoose</li>
+            <li>REST APIs</li>
+            <li>JWT</li>
+            <li>OAuth</li>
+          </ul>
+        </div>
+
+        <div class="techGroup">
+          <h3 class="techGroupTitle">Tools &amp; Workflow</h3>
+          <ul class="techStack">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Postman</li>
+            <li>Vercel</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="section contactSection">
